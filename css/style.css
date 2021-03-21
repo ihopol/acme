@@ -1028,15 +1028,15 @@ body.ie ._ibg img {
 }
 
 .social__list li:nth-child(1) {
-  background: url("../img/icons/instagram.svg") no-repeat;
+  background: url("../img/icons/instagram-mini.svg") no-repeat;
 }
 
 .social__list li:nth-child(2) {
-  background: url("../img/icons/facebook.svg") no-repeat;
+  background: url("../img/icons/facebook-mini.svg") no-repeat;
 }
 
 .social__list li:nth-child(3) {
-  background: url("../img/icons/twitter.svg") no-repeat;
+  background: url("../img/icons/twitter-mini.svg") no-repeat;
 }
 
 .social__link {
