@@ -5,12 +5,29 @@ function email_test(input) {
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
 var isMobile = {
-	Android: function () { return navigator.userAgent.match(/Android/i); },
-	BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); },
-	iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); },
-	Opera: function () { return navigator.userAgent.match(/Opera Mini/i); },
-	Windows: function () { return navigator.userAgent.match(/IEMobile/i); },
-	any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); }
+	Android: function () {
+		return navigator.userAgent.match(/Android/i);
+	},
+	BlackBerry: function () {
+		return navigator.userAgent.match(/BlackBerry/i);
+	},
+	iOS: function () {
+		return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	},
+	Opera: function () {
+		return navigator.userAgent.match(/Opera Mini/i);
+	},
+	Windows: function () {
+		return navigator.userAgent.match(/IEMobile/i);
+	},
+	any: function () {
+		return (
+			isMobile.Android() ||
+			isMobile.BlackBerry() ||
+			isMobile.iOS() ||
+			isMobile.Opera() ||
+			isMobile.Windows());
+	}
 };
 function isIE() {
 	ua = navigator.userAgent;
@@ -1454,11 +1471,11 @@ if (goto_links) {
 	}
 }
 function _goto(target_block, speed, offset = 0) {
-	let header = '';
+	let header = 'header';
 	//OffsetHeader
-	//if (window.innerWidth < 992) {
-	//	header = 'header';
-	//}
+	// if (window.innerWidth < 992) {
+	// 	header = 'header';
+	// }
 	let options = {
 		speedAsDuration: true,
 		speed: speed,
